@@ -13,13 +13,13 @@ It can also optionally generate **MPA-like (Multi-Page Application)** directory 
 Run it directly with **npx** (no installation required):
 
 ```sh
-npx angular-sitemap-generator [url-path] [options]
+npx angular-v22-sitemap-generator [url-path] [options]
 ```
 
 **Example:**
 
 ```sh
-npx angular-sitemap-generator https://borisonekenobi.github.io/DynoC-Docs/
+npx angular-v22-sitemap-generator https://borisonekenobi.github.io/DynoC-Docs/
 ```
 
 The `/` at the end of the URL is optional — the generator adds it automatically if missing.
@@ -79,7 +79,7 @@ export const routes: Routes = [
 Running:
 
 ```sh
-npx angular-sitemap-generator https://example.com -c
+npx angular-v22-sitemap-generator https://example.com -c
 ```
 
 Will create this structure inside your **public folder**:
@@ -101,7 +101,7 @@ directly load a deep link such as `https://example.com/about`.
 You can also control where these MPA directories are created using `-m` or `--mpa-path`:
 
 ```sh
-npx angular-sitemap-generator https://example.com -c -m ./dist/mpa
+npx angular-v22-sitemap-generator https://example.com -c -m ./dist/mpa
 ```
 
 ---
@@ -175,7 +175,7 @@ project-root/
 Running:
 
 ```sh
-npx angular-sitemap-generator https://example.com -g -c
+npx angular-v22-sitemap-generator https://example.com -g -c
 ```
 
 Generates:
@@ -200,8 +200,8 @@ Sitemap: https://example.com/sitemap.xml
 If you want to work on or modify this tool locally:
 
 ```sh
-git clone https://github.com/borisonekenobi/angular-sitemap-generator
-cd angular-sitemap-generator
+git clone https://github.com/borisonekenobi/angular-v22-sitemap-generator
+cd angular-v22-sitemap-generator
 npm install
 npm run build
 node ./dist/index.js https://example.com

@@ -49,7 +49,7 @@ for (let i = 2; i < process.argv.length; i++) {
 
     switch (option_flag) {
         case HELP:
-            console.log("Usage: npx angular-sitemap-generator [options] <url>");
+            console.log("Usage: npx angular-v22-sitemap-generator [options] <url>");
             console.log();
             console.log("Options: ");
             console.log("  -h, --help            shows help menu");
@@ -64,7 +64,7 @@ for (let i = 2; i < process.argv.length; i++) {
             break;
         case VERSION:
             const packageJson = require(path.join(__dirname, "package.json"));
-            console.log(`angular-sitemap-generator v${packageJson.version}`);
+            console.log(`angular-v22-sitemap-generator v${packageJson.version}`);
             process.exit(0);
             break;
         case SITEMAP_PATH:
@@ -98,9 +98,9 @@ if (!url_provided) throw new Error("URL not provided");
 try {
     console.log("Building project...");
     execSync(`tsc -P ${path.resolve(__dirname, "tsconfig.json")}`, {stdio: "inherit"});
-    fs.writeFileSync(path.join(process.cwd(), "./dist/sitemap/node_modules/angular-sitemap-generator/generator_options.json"), JSON.stringify(generator_options));
+    fs.writeFileSync(path.join(process.cwd(), "./dist/sitemap/node_modules/angular-v22-sitemap-generator/generator_options.json"), JSON.stringify(generator_options));
     console.log("Running generator...");
-    require(path.resolve(process.cwd(), "./dist/sitemap/node_modules/angular-sitemap-generator/generator.js"));
+    require(path.resolve(process.cwd(), "./dist/sitemap/node_modules/angular-v22-sitemap-generator/generator.js"));
 } catch (e) {
     console.error("Build failed:", e);
     process.exit(1);

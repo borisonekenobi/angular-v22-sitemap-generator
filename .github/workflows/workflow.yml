@@ -59,8 +59,8 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-          name: angular-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
-          path: angular-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
+          name: angular-v22-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
+          path: angular-v22-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
 
   test-angular22:
     name: Test Angular 22
@@ -76,11 +76,11 @@ jobs:
           node-version: 24
       - uses: actions/download-artifact@v8
         with:
-          name: angular-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
+          name: angular-v22-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
           path: tests/angular22
 
       - name: Install Prerelease Version
-        run: npm install angular-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
+        run: npm install angular-v22-sitemap-generator-${{ needs.get-version.outputs.version }}.tgz
 
       - name: Generate Sitemap
         run: npm run test

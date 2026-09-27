@@ -1,5 +1,5 @@
 {
-  "name": "angular-sitemap-generator",
+  "name": "angular-v22-sitemap-generator",
   "version": "3.2.3",
   "description": "Generates a sitemap.xml file for Angular projects",
   "keywords": [
@@ -12,24 +12,24 @@
     "google",
     "ecosystem:node"
   ],
-  "homepage": "https://github.com/borisonekenobi/angular-sitemap-generator#readme",
+  "homepage": "https://github.com/borisonekenobi/angular-v22-sitemap-generator#readme",
   "bugs": {
-    "url": "https://github.com/borisonekenobi/angular-sitemap-generator/issues"
+    "url": "https://github.com/borisonekenobi/angular-v22-sitemap-generator/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/borisonekenobi/angular-sitemap-generator.git"
+    "url": "git+https://github.com/borisonekenobi/angular-v22-sitemap-generator.git"
   },
   "license": "MIT",
   "author": "Boris Vasilev",
   "type": "commonjs",
   "main": "index.js",
   "bin": {
-    "angular-sitemap-generator": "index.js"
+    "angular-v22-sitemap-generator": "index.js"
   },
   "scripts": {
     "build": "tsc",
-    "exec": "node ./dist/node_modules/angular-sitemap-generator/index.js",
+    "exec": "node ./dist/node_modules/angular-v22-sitemap-generator/index.js",
     "test": "node ./index.js"
   },
   "dependencies": {
